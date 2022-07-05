@@ -29,6 +29,8 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 
 */
 
+const membersList = document.getElementById("team-members");
+
 const teamMembers = [
     { name: 'Wayne Barnett', role: 'Founder & CEO', img: 'wayne-barnett-founder-ceo.jpg' },
     { name: 'Angela Caroll', role: 'Chief Editor', img: 'angela-caroll-chief-editor.jpg' },
@@ -38,6 +40,8 @@ const teamMembers = [
     { name: 'Barbara Ramos', role: 'Graphic Designer', img: 'barbara-ramos-graphic-designer.jpg' }
 ]
 
+let member = ''
+
 for (let i = 0; i < teamMembers.length; i++) {
     const currentTeamMember = teamMembers[i];
     console.log("TEAM MEMBER");
@@ -45,4 +49,8 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log('role: ' + currentTeamMember.role);
     console.log('img: ' + currentTeamMember.img);
 
+    member += `<li>${currentTeamMember.name} | ${currentTeamMember.role} | ${currentTeamMember.img}</li>`;
+
 }
+
+membersList.innerHTML = member;
