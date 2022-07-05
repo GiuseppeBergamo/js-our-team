@@ -37,3 +37,12 @@ const teamMembers = [
     { name: 'Scott Estrada', role: 'Developer', img: 'scott-estrada-developer.jpg' },
     { name: 'Barbara Ramos', role: 'Graphic Designer', img: 'barbara-ramos-graphic-designer.jpg' }
 ]
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const currentTeamMember = teamMembers[i];
+    console.log("TEAM MEMBER");
+    console.log('name: ' + currentTeamMember.name);
+    console.log('role: ' + currentTeamMember.role);
+    console.log('img: ' + currentTeamMember.img);
+
+}
